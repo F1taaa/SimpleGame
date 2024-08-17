@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#gameArea {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#spaceship {
+    width: 150px;
+    height: 150px;
+    background: url('spaceship.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 75px); /* Center the spaceship */
+}
+
+.laser {
+    width: 5px;
+    height: 20px;
+    background-color: #0f0;
+    position: absolute;
+}
+
+.enemy {
+    width: 50px;
+    height: 50px;
+    background: url('enemy.png') no-repeat center center; 
+    background-size: contain;
+    position: absolute;
+}
+
+#score, #health, #gameOverScreen {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+#health {
+    top: 50px;
+}
+
+#startScreen, #gameOverScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#startButton, #restartButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}

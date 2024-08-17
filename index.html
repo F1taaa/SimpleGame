@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Invaders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="startScreen">
+      <h1>Space Shooter</h1>
+      <button id="startButton">PRESS TO START</button>
+    </div>
+    <div id="gameArea" style="display: none">
+      <div id="spaceship"></div>
+      <div id="lasers"></div>
+      <div id="enemies"></div>
+
+      <div id="score">Score: 0</div>
+      <div id="health">Health: <span id="healthValue">100</span></div>
+      <div id="gameOverScreen" style="display: none">
+        <h1>Game Over!</h1>
+        <p>Score: <span id="finalScore">0</span></p>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+    <audio id="bgMusic" src="background-music.mp3" loop></audio>
+    <audio id="laserSound" src="laser-sound.mp3"></audio>
+    <audio id="explosionSound" src="explosion-sound.mp3"></audio>
+    <audio id="enemyLaserSound" src="enemy-laser-sound.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
